@@ -43,6 +43,8 @@ private slots:
 
     void on_txtEdit_selectionChanged();
 
+    void on_actCut_triggered();
+
 private:
     Ui::MainWindow *ui;
 };

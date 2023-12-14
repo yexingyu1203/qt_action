@@ -26,7 +26,7 @@
      <x>0</x>
      <y>0</y>
      <width>372</width>
-     <height>26</height>
+     <height>17</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu">
@@ -72,11 +72,23 @@
    <attribute name="toolBarBreak">
     <bool>false</bool>
    </attribute>
+   <addaction name="actNew"/>
+   <addaction name="actOpen"/>
+   <addaction name="actClear"/>
+   <addaction name="separator"/>
+   <addaction name="actCut"/>
+   <addaction name="actCopy"/>
+   <addaction name="actPaste"/>
+   <addaction name="separator"/>
+   <addaction name="actFontBold"/>
+   <addaction name="actFontItalic"/>
+   <addaction name="actFontUnder"/>
+   <addaction name="separator"/>
   </widget>
   <action name="actCut">
    <property name="icon">
-    <iconset>
-     <normaloff>:/images/剪刀.png</normaloff>:/images/剪刀.png</iconset>
+    <iconset resource="res.qrc">
+     <normaloff>:/images/cut.png</normaloff>:/images/cut.png</iconset>
    </property>
    <property name="text">
     <string>剪切</string>
@@ -93,8 +105,8 @@
   </action>
   <action name="actCopy">
    <property name="icon">
-    <iconset>
-     <normaloff>:/images/复制.png</normaloff>:/images/复制.png</iconset>
+    <iconset resource="res.qrc">
+     <normaloff>:/images/copy.png</normaloff>:/images/copy.png</iconset>
    </property>
    <property name="text">
     <string>复制</string>
@@ -111,7 +123,7 @@
   </action>
   <action name="actNew">
    <property name="icon">
-    <iconset>
+    <iconset resource="res.qrc">
      <normaloff>:/images/new_file.png</normaloff>:/images/new_file.png</iconset>
    </property>
    <property name="text">
@@ -126,7 +138,7 @@
   </action>
   <action name="actOpen">
    <property name="icon">
-    <iconset>
+    <iconset resource="res.qrc">
      <normaloff>:/images/open.png</normaloff>:/images/open.png</iconset>
    </property>
    <property name="text">
@@ -144,7 +156,7 @@
   </action>
   <action name="actClose">
    <property name="icon">
-    <iconset>
+    <iconset resource="res.qrc">
      <normaloff>:/images/close.png</normaloff>:/images/close.png</iconset>
    </property>
    <property name="text">
@@ -159,7 +171,7 @@
   </action>
   <action name="actClear">
    <property name="icon">
-    <iconset>
+    <iconset resource="res.qrc">
      <normaloff>:/images/clear.png</normaloff>:/images/clear.png</iconset>
    </property>
    <property name="text">
@@ -174,8 +186,8 @@
   </action>
   <action name="actPaste">
    <property name="icon">
-    <iconset>
-     <normaloff>:/images/粘贴.png</normaloff>:/images/粘贴.png</iconset>
+    <iconset resource="res.qrc">
+     <normaloff>:/images/paste.png</normaloff>:/images/paste.png</iconset>
    </property>
    <property name="text">
     <string>粘贴</string>
@@ -195,7 +207,7 @@
     <bool>true</bool>
    </property>
    <property name="icon">
-    <iconset>
+    <iconset resource="res.qrc">
      <normaloff>:/images/Bold.png</normaloff>:/images/Bold.png</iconset>
    </property>
    <property name="text">
@@ -213,7 +225,7 @@
     <bool>true</bool>
    </property>
    <property name="icon">
-    <iconset>
+    <iconset resource="res.qrc">
      <normaloff>:/images/Italic.png</normaloff>:/images/Italic.png</iconset>
    </property>
    <property name="text">
@@ -231,7 +243,7 @@
     <bool>true</bool>
    </property>
    <property name="icon">
-    <iconset>
+    <iconset resource="res.qrc">
      <normaloff>:/images/underline.png</normaloff>:/images/underline.png</iconset>
    </property>
    <property name="text">
@@ -245,7 +257,9 @@
    </property>
   </action>
  </widget>
- <resources/>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
  <connections>
   <connection>
    <sender>actClear</sender>
